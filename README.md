@@ -23,12 +23,12 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-            gitCheckout(
-                branch: "master",
-                url: "https://github.com/repo-name"
-            )
+                gitCheckout(
+                    branch: "master",
+                    url: "https://github.com/repo-name"
+                )
             }
-    }
+        }
     }
 }
 ```
